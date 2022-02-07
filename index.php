@@ -22,7 +22,7 @@ session_start();
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Infinite Data Analizer</a>
+                <a class="navbar-brand" href="index.php">Infinite Data Analizer</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -31,7 +31,7 @@ session_start();
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="#menuChistes">Chistes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Iniciar sesion</a></li>
                         <?php if(isset($_SESSION["usuario"])): ?>
                             <li class="nav-item"><a class="nav-link" href="logout.php">Cerrar sesion</a></li>
                         <?php endif; ?>
@@ -44,7 +44,10 @@ session_start();
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Empieza a conocer el mundo de Big Data, <?php echo $_SESSION["usuario"]['nombre'] ?></h1>
+                        <h1 class="text-white font-weight-bold">Empieza a conocer el mundo de Big Data</h1>
+                        <?php if(isset($_SESSION["usuario"])): ?>
+                            <h1 class="text-white font-weight-bold"><?php echo $_SESSION["usuario"]['nombre'] ?></h1>
+                        <?php endif; ?>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">

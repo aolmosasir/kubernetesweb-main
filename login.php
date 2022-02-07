@@ -23,15 +23,15 @@ if (!empty($_SESSION[ 'usuario' ])) {
    <body id="page-top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
          <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="index.html">Infinite Data Analizer</a>
+            <a class="navbar-brand" href="index.php">Infinite Data Analizer</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                  <li class="nav-item"><a class="nav-link" href="index.html#sabermas">Big Data</a></li>
-                  <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
-                  <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
-                  <li class="nav-item"><a class="nav-link" href="index.html#menuChistes">Chistes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.php#sabermas">Big Data</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.php#services">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.php#portfolio">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.php#contact">Contacto</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.php#menuChistes">Chistes</a></li>
                </ul>
             </div>
          </div>
