@@ -19,10 +19,8 @@ if (isset($_POST['usuario']))
     if ($bind = ldap_bind($ds, $dn, $password))
     {
         $_SESSION["usuario"] = $username;
-        echo '<script type="text/javascript">
-    alert("Has iniciado sesion correctamente");
-    window.location="index.php";
-    </script>';
+
+        header ('Location: index.php');
     }
     else
     {
