@@ -1,6 +1,5 @@
 <?php
 session_start();
-var_dump($_SESSION['usuario']);
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +46,7 @@ var_dump($_SESSION['usuario']);
                     <div class="col-lg-8 align-self-end">
                         <h1 class="text-white font-weight-bold">Empieza a conocer el mundo de Big Data</h1>
                         <?php if(isset($_SESSION["usuario"])): ?>
-                            <h1 class="text-white font-weight-bold"><?php echo $_SESSION["usuario"]['nombre'] ?></h1>
+                            <h1 class="text-white font-weight-bold"><?php echo $_SESSION["usuario"] ?></h1>
                         <?php endif; ?>
                         <hr class="divider" />
                     </div>
