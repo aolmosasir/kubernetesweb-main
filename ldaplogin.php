@@ -1,4 +1,5 @@
 <?php
+session_start();
 $username = $_POST['usuario'];
 $password = $_POST['password'];
 
@@ -17,7 +18,6 @@ if (isset($_POST['usuario']))
 {
     if ($bind = ldap_bind($ds, $dn, $password))
     {
-        session_start();
         $_SESSION["usuario"] = $username;
         echo '<script type="text/javascript">
     alert("Has iniciado sesion correctamente");
