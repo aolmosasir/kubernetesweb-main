@@ -3,7 +3,7 @@ $username = $_POST['usuario'];
 $password = $_POST['password'];
 
 $ldapconfig['host'] = 'khodjent.aspnet.com';
-$ldapconfig['port'] = '636';
+$ldapconfig['port'] = '389';
 $ldapconfig['basedn'] = 'dc=khodjent,dc=aspnet,dc=com';
 $ldapconfig['usersdn'] = 'ou=People'; //CHANGE THIS TO THE CORRECT USER OU/CN
 $ds = ldap_connect($ldapconfig['host'], $ldapconfig['port']);
