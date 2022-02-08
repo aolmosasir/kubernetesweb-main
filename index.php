@@ -31,9 +31,10 @@ session_start();
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="#menuChistes">Chistes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php">Iniciar sesion</a></li>
                         <?php if(isset($_SESSION["usuario"])): ?>
                             <li class="nav-item"><a class="nav-link" href="logout.php">Cerrar sesion</a></li>
+                        <?php else: ?>
+                            <li class="nav-item"><a class="nav-link" href="login.php">Iniciar sesion</a></li>
                         <?php endif; ?>
 						<li><button type="button" class="btn btn-danger" id="tema" onclick="cambiarTema()"><i class="fa fa-moon-o" aria-hidden="true"></i></button></li>
                     </ul>
