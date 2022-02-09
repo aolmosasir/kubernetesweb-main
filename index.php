@@ -1,5 +1,5 @@
 <?php
-ini_set('session.save_path',realpath(dirname($_SERVER['DOCUMENT_ROOT']) . '/tmp'));
+session_save_path('/var/www/html/tmp');
 ini_set('session.gc_probability', 1);
 session_start();
 ?>
