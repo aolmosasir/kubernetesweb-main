@@ -21,6 +21,7 @@ if (isset($_POST['usuario']))
         $_SESSION["usuario"] = $username;
 
         header ('Location: index.php');
+        exit;
     }
     else
     {
